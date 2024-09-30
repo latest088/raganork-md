@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true',fault2='on') {
 }
 const settingsMenu = [
     {title: "PM antispam block", env_var: "PM_ANTISPAM"},
-    {title: "Auto read all messages", env_var: "READ_MESSAGES"},
+    {title: "Auto read all messages", env_var: "NO"},
     {title: "Auto read command messages", env_var: "READ_COMMAND"},
     {title: "Auto read status updates", env_var: "AUTO_READ_STATUS"},
     {title: "Admin sudo acces mode (group commands only)", env_var: "ADMIN_ACCESS"},
@@ -22,7 +22,7 @@ const settingsMenu = [
   ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
-if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
+if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~0777b1a19afbc8c5d5a14ea91c4287a9:37764670573646745435513d")
 module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
